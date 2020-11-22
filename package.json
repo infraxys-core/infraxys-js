@@ -4,7 +4,8 @@
   "description": "Infraxys JavaScript utilities",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-and-pack": "npx webpack && npm pack"
   },
   "repository": {
     "type": "git",
@@ -12,6 +13,10 @@
   },
   "author": "Jeroen Manders",
   "license": "SEE LICENSE IN LICENSE",
+  "keywords": [
+    "infraxys javascript"
+  ],
+  "contributors": [],
   "bugs": {
     "url": "https://github.com/infraxys-core/infraxys-js/issues"
   },
@@ -28,5 +33,9 @@
   "dependencies": {
     "axios": "^0.21.0",
     "base64-js": "^1.5.1"
-  }
+  },
+  "files": [
+    "dist/**"
+  ],
+  "main": "dist/main.js"
 }

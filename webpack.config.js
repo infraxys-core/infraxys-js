@@ -1,6 +1,9 @@
 module.exports = {
-  mode: 'production',
+  mode: 'none',
   entry: './src/index.js',
+  output: {
+    filename: 'main.js',
+  },
   resolve: {
     extensions: ['.js'],
   },
