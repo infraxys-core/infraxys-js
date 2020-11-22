@@ -1,18 +1,21 @@
 {
   "name": "infraxys-js",
-  "version": "1.0.0",
+  "version": "1.0.19",
   "description": "Infraxys JavaScript utilities",
-  "private": true,
+  "private": false,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-and-pack": "npx webpack && npm pack"
+    "pub": "npm run minor && npx webpack && npm pack && npm publish --access public",
+    "minor": "npm version patch --no-git-tag-version",
+    "build": "npx webpack"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/infraxys-core/infraxys-js.git"
   },
-  "author": "Jeroen Manders",
+  "author": "Jeroen Manders <npmjs@manders.be>",
   "license": "SEE LICENSE IN LICENSE",
+  "main": "index.js",
   "keywords": [
     "infraxys javascript"
   ],
@@ -35,7 +38,6 @@
     "base64-js": "^1.5.1"
   },
   "files": [
-    "dist/**"
-  ],
-  "main": "dist/main.js"
+    "lib/infraxys-js.js"
+  ]
 }
