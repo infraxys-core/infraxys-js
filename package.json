@@ -1,6 +1,6 @@
 {
   "name": "infraxys-js",
-  "version": "1.0.19",
+  "version": "1.0.26",
   "description": "Infraxys JavaScript utilities",
   "private": false,
   "scripts": {
@@ -15,7 +15,7 @@
   },
   "author": "Jeroen Manders <npmjs@manders.be>",
   "license": "SEE LICENSE IN LICENSE",
-  "main": "index.js",
+  "module": "lib/infraxys-js.js",
   "keywords": [
     "infraxys javascript"
   ],

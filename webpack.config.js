@@ -2,12 +2,12 @@ const path = require('path');
 
 module.exports = {
   mode: 'none',
-  entry: './index.js',
+  entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'lib'),
     filename: 'infraxys-js.js',
     library: 'InfraxysJs',
-    libraryTarget: 'var',
+    libraryTarget: 'umd',
   },
   resolve: {
     extensions: ['.js'],
